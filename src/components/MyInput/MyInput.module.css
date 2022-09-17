@@ -1,0 +1,14 @@
+.myInput {
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid blue;
+    /*border-bottom: 2px solid blue;*/
+    background: transparent;
+    transition: border-color 0.2s ;
+    margin-right: 1px;
+    width: 100px;
+    /*height: 15px;*/
+}
+.myInput::placeholder {
+     color: transparent;
+ }

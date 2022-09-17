@@ -1,0 +1,8 @@
+.myBtn {
+    font-family: inherit;
+    font-size: inherit;
+    color: blue;
+    background: transparent;
+    border: 2px solid blue;
+    cursor: pointer;
+}

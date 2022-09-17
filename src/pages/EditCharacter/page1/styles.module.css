@@ -1,0 +1,27 @@
+.container{
+    imageRendering: pixelated;
+}
+.baseParams{
+    /*display: flex;*/
+}
+.baseParamsColumn{
+    /*flexDirection: column;*/
+}
+.baseParamRow{
+    /*flexDirection: row;*/
+}
+.editParam{
+    margin-left: 7px;
+    width: 10px;
+    display: inline;
+    color: blue;
+
+
+}
+.editParam:hover{
+    color: #000079;
+}
+
+.editForm{
+    margin: 3px 0;
+}

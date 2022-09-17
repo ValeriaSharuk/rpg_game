@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    border-radius: 0px;
+    padding: 5px;
+    border: 5px solid #6e2e97;
+    outline: 5px solid blue;
+    text-decoration: none;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+}
+.main:hover{
+    outline: 5px solid #c97110;
+}
+

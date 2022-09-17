@@ -1,0 +1,17 @@
+.container{
+    imageRendering: pixelated;
+}
+.baseParams{
+    display: flex;
+}
+.baseParamsColumn{
+    flexDirection: column;
+}
+.baseParamRow{
+    flexDirection: row;
+}
+.editParam{
+    margin-left: 7px;
+    width: 10px;
+    display: inline;
+}

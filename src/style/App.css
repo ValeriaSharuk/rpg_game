@@ -1,0 +1,23 @@
+*{
+
+}
+
+body {
+  background: #333;
+
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  border: 5px solid #6e2e97;
+  outline: 5px solid blue;
+  padding: 20px;
+  font-family: MyFont;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../assets/fonts/BungeeSpice.ttf) format('woff');
+}
