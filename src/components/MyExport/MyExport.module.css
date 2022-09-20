@@ -1,0 +1,32 @@
+.export{
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+}
+.export:hover{
+    outline: 5px solid #c97110;
+}
+.exportImage{
+    border-left: 5px solid blue;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    height: 30px;
+    width: 30px;
+    color: #e17405;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exportText{
+    border: 5px solid blue;
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+}

@@ -1,0 +1,22 @@
+.container{
+    margin-top: 50px;
+    margin-right: 30px;
+    text-align: center;
+
+}
+
+.itemIconHP{
+    color: #de0000;
+    margin-right:10px;
+}
+
+.itemIconDodge{
+    color: blue;
+    margin-right:10px;
+}
+
+.itemIconEnergy{
+    color: #53b201;
+    margin-right:10px;
+}
+

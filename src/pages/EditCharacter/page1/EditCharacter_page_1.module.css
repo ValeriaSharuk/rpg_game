@@ -1,0 +1,11 @@
+.container{
+    font-size: 14px;
+    width: inherit;
+    height: inherit;
+    white-space: nowrap;
+}
+.textCol{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+}

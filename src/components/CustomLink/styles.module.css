@@ -7,7 +7,8 @@
     text-decoration: none;
     justify-content: center;
     color: white;
-    margin: 20px;
+    margin: 20px 0px 20px 0px;
+
 }
 .main:hover{
     outline: 5px solid #c97110;

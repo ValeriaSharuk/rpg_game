@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   border: 5px solid #6e2e97;
   outline: 5px solid blue;
-  padding: 20px;
+  padding: 20px 40px 70px 40px;
   font-family: MyFont;
 }
 

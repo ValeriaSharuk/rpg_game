@@ -1,0 +1,13 @@
+.editForm{
+    margin: 3px 0;
+}
+
+.editParam{
+    margin:0 7px;
+    width: 10px;
+    display: inline;
+    color: blue;
+}
+.editParam:hover{
+    color: #000079;
+}
