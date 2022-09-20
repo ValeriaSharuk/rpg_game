@@ -11,7 +11,7 @@ const MyExport = () => {
 
     const saveFile = async (blob) => {
         const a = document.createElement('a');
-        a.download = 'myCharacter.json';
+        a.download = `${character.name}.json`;
         a.href = URL.createObjectURL(blob);
         a.addEventListener('click', (e) => {
             setTimeout(() => URL.revokeObjectURL(a.href), 30 * 1000);

@@ -11,7 +11,7 @@ function App() {
 
     const [character, setCharacter] = useState(new Character(InitCharacter))
 
-    localStorage.clear()
+
     useEffect(() => {
         if(localStorage.getItem("character"))
             setCharacter(new Character(JSON.parse(localStorage.getItem('character'))))
