@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./MyImport.module.css";
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import {CharacterContext} from "../context/context";
 import Character from "../../character/Character";
 

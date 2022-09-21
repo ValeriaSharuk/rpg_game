@@ -27,7 +27,6 @@ const MyExport = () => {
             <div className={styles.exportText}>
                 Export character
             </div>
-
         </div>
     );
 };

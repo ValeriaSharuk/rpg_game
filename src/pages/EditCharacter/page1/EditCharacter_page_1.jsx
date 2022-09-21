@@ -28,9 +28,11 @@ const EditCharacter_page_1 = () => {
                 <BaseParameters/>
             </div>
             <div className={styles.textCol} style={{ width: '40%' }}>
-                <MyImport/>
-                <MyExport/>
                 <AdditionalParameters/>
+                <div className={styles.buttons}>
+                    <MyImport/>
+                    <MyExport/>
+                </div>
             </div>
             <CustomLink to='/edit2'>Next</CustomLink>
         </div>

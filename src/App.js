@@ -10,8 +10,6 @@ import InitCharacter from "./data/InitCharacter";
 function App() {
 
     const [character, setCharacter] = useState(new Character(InitCharacter))
-
-
     useEffect(() => {
         if(localStorage.getItem("character"))
             setCharacter(new Character(JSON.parse(localStorage.getItem('character'))))

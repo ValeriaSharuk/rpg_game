@@ -6,7 +6,7 @@ const InitCharacter = {
         attack:{
         name: 'attack',
             level: 0,
-            level_progress: 100,
+            level_progress: 0,
     }
 },
     agility: {
@@ -63,5 +63,6 @@ const InitCharacter = {
                 level_progress: 0,
         },
     },
+
 }
 export default InitCharacter

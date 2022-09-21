@@ -1,5 +1,4 @@
 .container{
-    font-size: 14px;
     width: inherit;
     height: inherit;
     white-space: nowrap;
@@ -8,9 +7,7 @@
     white-space: normal;
     display: inline-block;
     vertical-align: top;
-}
-.buttons{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    width: 48%;
+    margin-right: 15px;
+    font-size: 30px;
 }

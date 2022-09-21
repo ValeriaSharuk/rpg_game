@@ -1,16 +1,28 @@
-.main {
+.smallButton {
     display: flex;
-    border-radius: 0px;
     padding: 5px;
     border: 5px solid #6e2e97;
     outline: 5px solid blue;
     text-decoration: none;
     justify-content: center;
-    color: white;
+    align-items: center;
     margin: 20px 0px 20px 0px;
 
 }
-.main:hover{
+.smallButton:hover{
     outline: 5px solid #c97110;
+}
+.bigButton {
+    display: flex;
+    padding: 5px;
+    height: 250px;
+    border: 5px solid #6e2e97;
+    outline: 5px solid blue;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.bigButton:hover{
+    background-color: #6e2e97;
 }
 

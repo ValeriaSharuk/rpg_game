@@ -2,6 +2,7 @@ import React,{useContext} from 'react';
 import styles from "./BaseParameters.module.css";
 import {CharacterContext} from "../context/context";
 import Character from "../../character/Character";
+import {get_BaseParamsKeys} from "../../utils/characterFunctions";
 
 const BaseParameters = () => {
     const {character, setCharacter} = useContext(CharacterContext);
@@ -22,7 +23,7 @@ const BaseParameters = () => {
     return (
         <div className={styles.container}>
                 <p>Base parameters:</p>
-                {character.get_BaseParamsKeys().map(param =>
+                {get_BaseParamsKeys().map(param =>
                     <div key={param} className={styles.editForm}>
                         <span>{param}: </span>
                         <div onClick={() => clickToSubtractParam(param)} className={styles.editParam}>

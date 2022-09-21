@@ -1,28 +1,25 @@
-.container{
-    font-size: 14px;
-}
 .main {
     border-radius: 5px;
-    gap: 5px;
     padding: 5px 0 ;
     align-items: center;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .max {
     height: 15px;
+    width: 160px;
     border-radius: 5px;
     overflow: hidden;
     box-sizing: border-box;
     background-color: snow;
-    width: 50%;
+
     display: flex;
-    align-items: center;
+    justify-self: center;
     position: relative;
 }
 .value {
-
     height: 100%;
     background-color: #0566fa;
     transition: 0.35s;
@@ -34,4 +31,15 @@
     align-self: center;
     font-family: "Bauhaus 93";
     color: #e33d00;
+}
+.plus{
+    margin-left: 10px;
+    color: blue;
+}
+.plus:hover{
+    color: #000079;
+}
+.maxAndPlus{
+    display: flex;
+    flex-direction: row;
 }

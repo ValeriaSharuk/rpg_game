@@ -3,13 +3,25 @@ import styles from './styles.module.css';
 
 const CustomLink = ({children, to, ...props}) => {
     return (
-        <Link
-            to={to}
-            className={styles.main}
-            {...props}
-        >
-            {children}
-        </Link>
+        <div>
+            {props.bigButton ?
+                <Link
+                    to={to}
+                    className={styles.bigButton}
+                    {...props}
+                >
+                    {children}
+                </Link>
+            :
+            <Link
+                to={to}
+                className={styles.smallButton}
+                {...props}
+            >
+                {children}
+            </Link>
+            }
+        </div>
     )
 }
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Skill from "./Skill";
+import {get_ParamNameBySkillName, get_SkillsKeys, isSkillLvlLowerParamLvl, get_BaseParamsKeys, get_AdditionalParamsKeys} from "../utils/characterFunctions"
 
 class Character {
     constructor(props) {
@@ -32,6 +33,7 @@ class Character {
         this.energy = this.intelligence.level + this.charisma.level;
     }
 
+
     increaseParamLevel(param){
         //validation for parameter
         if( this[param].level === 5 ){
@@ -42,21 +44,27 @@ class Character {
         }
     }
 
-    decreaseParamLevel(param){
+    decreaseParamLevel(param) {
         //validation for parameter
-        if( this[param].level === 0 ){
-            this[param].level = this[param].level
+        if(this[param].level !== 0){
+            if ( isSkillLvlLowerParamLvl(param, this)) {
+                this[param].level = this[param].level - 1;
+            }
         }
-        else{
-            this[param].level = this[param].level - 1;
+        else {
+            this[param].level = this[param].level;
         }
     }
 
+
     setName(props) {
         //validation for name
-            if(props.length > 15)
+            if(props.length > 15 && props.length)
             {
                 this.name = props.slice(0, 16);
+            }
+            else if(props.length === 0){
+                this.name = this.name;
             }
             else{
                 this.name = props;
@@ -73,17 +81,15 @@ class Character {
 
     get_AdditionalParam(param){
         return this[param];
-    }
-    get_BaseParamsKeys(){
-        return ['strength', 'agility', 'intelligence', 'charisma'];
+        console.log(this[param])
     }
 
-    get_AdditionalParamsKeys(){
-        return ['HP', 'dodging', 'energy'];
+    get_HP(){
+        return this.HP
     }
 
     get_Skills(){
-        const baseParamKeys = this.get_BaseParamsKeys();
+        const baseParamKeys = get_BaseParamsKeys();
         let skillsArr = [];
         for(let keyParam of baseParamKeys){
             let baseParamValue= Object.keys(this[keyParam])
@@ -96,5 +102,28 @@ class Character {
         }
         return skillsArr;
     }
+
+    set_Skill(skillName){
+        const [keyParam, keyParamValue] = get_ParamNameBySkillName(skillName, this);
+        console.log(this[keyParam])
+        //if skill bar is full
+        if(this[keyParam][keyParamValue].level_progress === 100){
+            //if skill level isn't higher than parameter level
+            if(this[keyParam][keyParamValue].level < this[keyParam].level){
+                this[keyParam][keyParamValue].level_progress = 0;
+                this[keyParam][keyParamValue].level += 1;
+            }
+        }
+        else{
+            this[keyParam][keyParamValue].level_progress += 10;
+        }
+    }
+
+    reduce_HP() {
+        console.log(this.HP)
+        this.HP -= 1;
+        console.log(this.HP)
+    }
+
 }
 export default Character;

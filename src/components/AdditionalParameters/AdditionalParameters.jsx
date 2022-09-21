@@ -2,12 +2,13 @@ import React from 'react';
 import {useContext} from "react";
 import {CharacterContext} from "../context/context";
 import styles from "./AdditionalParameters.module.css"
+import {get_AdditionalParamsKeys} from "../../utils/characterFunctions";
 
 const AdditionalParameters = () => {
 
     const {character, setCharacter} = useContext(CharacterContext);
 
-    const addParamsArr = character.get_AdditionalParamsKeys();
+    const addParamsArr = get_AdditionalParamsKeys();
 
     return (
         <div className={styles.container}>

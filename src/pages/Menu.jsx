@@ -8,7 +8,7 @@ const Menu = () => {
         <div>
             <CustomLink   to="/start">Start</CustomLink>
             <CustomLink   to="/edit1">Edit</CustomLink>
-            <div style={{justifyContent:"center"}}>
+            <div style={{textAlign:"center"}}>
                 <h1>
                     Greetings Traveler
                 </h1>
